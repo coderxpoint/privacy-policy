@@ -124,14 +124,30 @@
 </p>
 <ul>
   <li>
-    <strong>contextMenus:</strong> Used to provide quick right-click options so users can manually start SEO analysis from the active webpage.
+    <strong>contextMenus:</strong> FullPageX Screenshot uses the contextMenus permission to provide right-click screenshot options, such as capturing the visible area, full page, or selected region. This permission is used only when the user manually selects a screenshot action and does not collect, store, or share personal data.
+
   </li>
   <li>
-    <strong>notifications:</strong> Used to show local browser notifications when an SEO analysis is completed or when important SEO issues are detected.
+    <strong>notifications:</strong> FullPageX Screenshot uses the notifications permission to show local browser alerts when a screenshot is captured, saved, exported, or when an action fails. Notifications are generated locally in the browser and do not collect, transmit, or share any user data.
+
   </li>
   <li>
-    <strong>sidePanel:</strong> Used to display SEO analysis results in Chrome’s side panel for easier viewing while users remain on the current webpage.
+    <strong>tabs:</strong> FullPageX Screenshot uses the tabs permission to identify the active tab and capture the webpage selected by the user. This permission is required for screenshot functionality and is not used to track browsing history or collect personal data.
+
   </li>
+   <li>
+    <strong>scripting:</strong> FullPageX Screenshot uses the scripting permission to inject capture and selection scripts into the active webpage only when the user starts a screenshot action. This is required for region capture, full-page capture, annotation preparation, and page interaction. No personal data is collected or transmitted.
+
+  </li>
+   <li>
+    <strong>activeTab:</strong> FullPageX Screenshot uses the activeTab permission to access the current webpage only after the user clicks the extension or starts a screenshot action. Access is temporary and limited to the active tab selected by the user.
+
+  </li>
+   <li>
+    <strong>storage:</strong> FullPageX Screenshot uses the storage permission to save user preferences, screenshot settings, theme mode, and local screenshot history. This data remains on the user’s device and is not shared with external servers.
+
+  </li>
+  
 </ul>
 <p>
   These permissions are used only for user-requested SEO analysis features. SEO AnalyzerX does not use these permissions to collect, store, sell, or share personal data.
@@ -139,7 +155,7 @@
     <footer>
       <p>
         If you have questions about this privacy policy, please contact:<br>
-        <strong>support@coderxpoint.com</strong>
+        <strong>info@coderxpoint.com</strong>
       </p>
       <p>
         © 2026 CoderXpoint. All rights reserved.
